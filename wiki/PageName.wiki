@@ -1,0 +1,6 @@
+#summary Main page
+
+= List of AntiCulture projects =
+
+  * [[World]]
+  * [[Music]]
