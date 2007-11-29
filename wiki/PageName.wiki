@@ -1,1 +1,3 @@
-= Welcome to AntiCulture please document classes =
+= AntiCulture =
+
+Please document classes
