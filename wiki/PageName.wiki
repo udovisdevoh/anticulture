@@ -1,0 +1,3 @@
+#summary Main page
+
+= Welcome to AntiCulture, please document classe =
