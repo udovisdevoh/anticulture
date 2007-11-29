@@ -1,3 +1,0 @@
-=AntiCulture=
-
-Please document classes
