@@ -1,0 +1,80 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7AB052F2-BFD7-4E5B-8F2C-24D8FB087DBB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AntiCulture.Worlds</RootNamespace>
+    <AssemblyName>AntiCulture.Worlds</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Encyclopedia.cs" />
+    <Compile Include="Entities\Apple.cs" />
+    <Compile Include="Entities\Water.cs" />
+    <Compile Include="Entities\HealingPlant.cs" />
+    <Compile Include="Entities\Pee.cs" />
+    <Compile Include="Operations\Piss.cs" />
+    <Compile Include="Entities\Poo.cs" />
+    <Compile Include="Entities\Rock.cs" />
+    <Compile Include="Entities\Steak.cs" />
+    <Compile Include="Entities\Tree.cs" />
+    <Compile Include="Entities\Vomit.cs" />
+    <Compile Include="Entity.cs" />
+    <Compile Include="Operations\Eat.cs" />
+    <Compile Include="Operations\Go.cs" />
+    <Compile Include="Operations\Hit.cs" />
+    <Compile Include="Operations\Puke.cs" />
+    <Compile Include="Operations\Push.cs" />
+    <Compile Include="Operations\Shit.cs" />
+    <Compile Include="Operations\Sleep.cs" />
+    <Compile Include="Plugin.cs" />
+    <Compile Include="RandomOperation.cs" />
+    <Compile Include="Species.cs" />
+    <Compile Include="Human.cs" />
+    <Compile Include="Operation.cs" />
+    <Compile Include="OperationPrototype.cs" />
+    <Compile Include="Operator.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Timer.cs" />
+    <Compile Include="Vector.cs" />
+    <Compile Include="World.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
