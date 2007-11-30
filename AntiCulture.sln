@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Audio.Midi", "Audio\Midi\Au
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worlds", "Worlds\Worlds.csproj", "{7AB052F2-BFD7-4E5B-8F2C-24D8FB087DBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XnaGraphics", "Worlds\Plugins\XnaGraphics\XnaGraphics.csproj", "{6FA2EF8E-21B2-4201-A2A0-85D08859D42F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worlds.Plugins.XnaGraphics", "Worlds\Plugins\XnaGraphics\Worlds.Plugins.XnaGraphics.csproj", "{6FA2EF8E-21B2-4201-A2A0-85D08859D42F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

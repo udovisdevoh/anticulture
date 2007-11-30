@@ -4,14 +4,14 @@ using System.Text;
 
 namespace AntiCulture.Worlds.Operations
 {
-    public class Piss : Operation
+    public class Pee : Operation
     {
         #region Static operator
-        public static readonly Operator Operator = new Operator("piss", Factory, 0);
+        public static readonly Operator Operator = new Operator("pee", Factory, 0);
 
         private static Operation Factory(Human who, Entity[] what)
         {
-            return new Piss(who);
+            return new Pee(who);
         }
         #endregion
 
@@ -21,7 +21,7 @@ namespace AntiCulture.Worlds.Operations
         #endregion
 
         #region Constructor
-        public Piss(Human who)
+        public Pee(Human who)
         {
             mWho = who;
         }
@@ -46,7 +46,7 @@ namespace AntiCulture.Worlds.Operations
             mTimeLeft -= timer.TimeDelta;
             if (mTimeLeft <= 0.0f)
             {
-                Species species = mWho.World.Encyclopedia.FindSpecies("pee");
+                Species species = mWho.World.Encyclopedia.FindSpecies("piss");
                 if (species != null)
                 {
                     Entity pee = species.Factory(mWho.World);
@@ -58,7 +58,7 @@ namespace AntiCulture.Worlds.Operations
 
         public override string ToString()
         {
-            return "piss";
+            return "pee";
         }
         #endregion
     }

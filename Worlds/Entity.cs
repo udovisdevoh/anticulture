@@ -9,27 +9,17 @@ namespace AntiCulture.Worlds
         #region PropertyAccessor structure
         public class PropertyAccessor
         {
-            private Dictionary<string, float> mEntityProperties;
-            private Species mSpecies;
+            private Entity mEntity;
 
-            public PropertyAccessor(Dictionary<string, float> entityProperties, Species species)
+            public PropertyAccessor(Entity entity)
             {
-                mEntityProperties = entityProperties;
-                mSpecies = species;
+                mEntity = entity;
             }
 
-            public float this[string property]
+            public float this[string propertyName]
             {
-                get
-                {
-                    string lowerCaseProperty = property.ToLower();
-                    float value;
-                    // If it's not defined by the entity, it might be defined by it's species
-                    if (!mEntityProperties.TryGetValue(lowerCaseProperty, out value))
-                        return mSpecies.Properties[lowerCaseProperty];
-                    return value;
-                }
-                set { mEntityProperties[property.ToLower()] = value; }
+                get { return mEntity.GetProperty(propertyName); }
+                set { mEntity.SetProperty(propertyName, value); }
             }
         };
         #endregion
@@ -81,9 +71,10 @@ namespace AntiCulture.Worlds
             set { mPosition = value; }
         }
 
+        // Cute wrapper to GetProperty/SetProperty methods
         public PropertyAccessor Properties
         {
-            get { return new PropertyAccessor(mProperties, mSpecies); }
+            get { return new PropertyAccessor(this); }
         }
 
         public virtual float Integrity
@@ -107,6 +98,21 @@ namespace AntiCulture.Worlds
         #endregion
 
         #region Methods
+        public virtual float GetProperty(string name)
+        {
+            string lowerCaseName = name.ToLower();
+            float value;
+            // If it's not defined by the entity, it might be defined by it's species
+            if (!mProperties.TryGetValue(lowerCaseName, out value))
+                return mSpecies.Properties[lowerCaseName];
+            return value;
+        }
+
+        public virtual void SetProperty(string name, float value)
+        {
+            mProperties[name.ToLower()] = value;
+        }
+
         public virtual void Die()
         {
             if (!IsAlive) return;
