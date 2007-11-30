@@ -15,6 +15,41 @@ namespace AntiCulture.Worlds
         private List<Human> mTrackedHumans = new List<Human>();
         #endregion
 
+        #region Constructor
+        private Program()
+        {
+            Encyclopedia encyclopedia = new Encyclopedia();
+
+            // Register species
+            encyclopedia.Species.Add(Human.Species);
+
+            encyclopedia.Species.Add(Entities.Steak.Species);
+            encyclopedia.Species.Add(Entities.Apple.Species);
+            encyclopedia.Species.Add(Entities.Water.Species);
+            encyclopedia.Species.Add(Entities.Rock.Species);
+            encyclopedia.Species.Add(Entities.Tree.Species);
+            encyclopedia.Species.Add(Entities.Vomit.Species);
+            encyclopedia.Species.Add(Entities.HealingPlant.Species);
+            encyclopedia.Species.Add(Entities.Poo.Species);
+            encyclopedia.Species.Add(Entities.Piss.Species);
+
+            // Register operators
+            // Note: RandomOperator is NOT registered as it currently cannot
+            //       be tracked properly by entities.
+            encyclopedia.Operators.Add(Operations.Go.Operator);
+            encyclopedia.Operators.Add(Operations.Eat.Operator);
+            encyclopedia.Operators.Add(Operations.Hit.Operator);
+            encyclopedia.Operators.Add(Operations.Sleep.Operator);
+            encyclopedia.Operators.Add(Operations.Puke.Operator);
+            encyclopedia.Operators.Add(Operations.Push.Operator);
+            encyclopedia.Operators.Add(Operations.Shit.Operator);
+            encyclopedia.Operators.Add(Operations.Pee.Operator);
+
+            // Set this encyclopedia to be used by our world
+            mWorld.Encyclopedia = encyclopedia;
+        }
+        #endregion
+
         #region Methods
         private void Run()
         {
@@ -85,14 +120,21 @@ namespace AntiCulture.Worlds
                     }
                     else
                     {
-                        uint count = (arguments.Length == 2) ? uint.Parse(arguments[1]) : 1;
-                        for (uint i = 0; i < count; ++i)
+                        try
                         {
-                            Entity entity = species.Factory(mWorld);
-                            entity.Position = new Vector((float)mRandom.NextDouble() * 20.0f - 10.0f, (float)mRandom.NextDouble() * 20.0f - 10.0f);
-                            mWorld.Entities.Add(entity);
+                            uint count = (arguments.Length == 2) ? uint.Parse(arguments[1]) : 1;
+                            for (uint i = 0; i < count; ++i)
+                            {
+                                Entity entity = species.Factory(mWorld);
+                                entity.Position = new Vector((float)mRandom.NextDouble() * 20.0f - 10.0f, (float)mRandom.NextDouble() * 20.0f - 10.0f);
+                                mWorld.Entities.Add(entity);
+                            }
+                            Console.WriteLine("Added " + count + " instance(s) of species \"" + arguments[0] + "\"");
                         }
-                        Console.WriteLine("Added " + count + " instance(s) of species \"" + arguments[0] + "\"");
+                        catch (Exception)
+                        {
+                            Console.WriteLine("Error interpreting command, was the second argument an integer?");
+                        }
                     }
                 }
             }

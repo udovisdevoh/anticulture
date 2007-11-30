@@ -37,10 +37,9 @@
   <ItemGroup>
     <Compile Include="Encyclopedia.cs" />
     <Compile Include="Entities\Apple.cs" />
+    <Compile Include="Entities\Piss.cs" />
     <Compile Include="Entities\Water.cs" />
     <Compile Include="Entities\HealingPlant.cs" />
-    <Compile Include="Entities\Pee.cs" />
-    <Compile Include="Operations\Piss.cs" />
     <Compile Include="Entities\Poo.cs" />
     <Compile Include="Entities\Rock.cs" />
     <Compile Include="Entities\Steak.cs" />
@@ -50,6 +49,7 @@
     <Compile Include="Operations\Eat.cs" />
     <Compile Include="Operations\Go.cs" />
     <Compile Include="Operations\Hit.cs" />
+    <Compile Include="Operations\Pee.cs" />
     <Compile Include="Operations\Puke.cs" />
     <Compile Include="Operations\Push.cs" />
     <Compile Include="Operations\Shit.cs" />

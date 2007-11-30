@@ -7,7 +7,7 @@ namespace AntiCulture.Worlds
     public class World
     {
         #region Data members
-        private Encyclopedia mEncyclopedia = new Encyclopedia();
+        private Encyclopedia mEncyclopedia; // No encyclopedia by default, user must provide one
         private List<Entity> mEntities = new List<Entity>();
         #endregion
 
@@ -15,6 +15,7 @@ namespace AntiCulture.Worlds
         public Encyclopedia Encyclopedia
         {
             get { return mEncyclopedia; }
+            set { mEncyclopedia = value; }
         }
 
         public List<Entity> Entities
