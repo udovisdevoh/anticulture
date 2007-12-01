@@ -5,4 +5,5 @@
   * [Operator]
   * [Entity]
   * [OperationPrototype]
+  * [SpeciesProperty]
   * [NeedStat Need]
