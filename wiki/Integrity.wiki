@@ -1,4 +1,6 @@
-#summary Integrity is a [NeedStats need] in the AntiCultureWorld project.
+#summary Integrity is part of the AntiCultureWorld project.
+
+Integrity is a [NeedStats need].
 
 ==When too low==
 The [Entity entity] dies
