@@ -1,0 +1,1 @@
+#summary An entity is an object which can be used by an operator.
