@@ -1,6 +1,6 @@
-#summary Integrity is part of the AntiCultureWorld project.
+#summary Food is part of the AntiCultureWorld project.
 
-Integrity is a [NeedStat need].
+Food is a [NeedStat need].
 
 ==When too low==
 The [Entity entity]'s [Integrity integrity] is decreased
