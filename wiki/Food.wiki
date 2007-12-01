@@ -17,5 +17,5 @@ The [Entity entity]'s [Integrity integrity] is decreased
   * When the [Entity entity] vomits
   * When the [Entity entity] defecates
 
-==When is it increased?==
-When the [Entity entity] [Consume consumes] something with [Nutrition nutrition]  > 0
+==When is it altered?==
+When the [Entity entity] [Consume consumes] something with [Nutrition nutrition] properties
