@@ -1,0 +1,21 @@
+#summary Integrity is part of the AntiCultureWorld project.
+
+Integrity is a [NeedStat need].
+
+==When too low==
+The [Entity entity]'s [Integrity integrity] is decreased
+
+==When too high==
+  * The [Entity entity]'s [Integrity integrity] is decreased
+=== Possible effects we could implement ===
+  * The [Entity entity]'s [Sleep sleep] stat is decreased (would make it more likely to sleep)
+  * The [Entity entity] could be slowed down
+  * The [Entity entity] could be lazy
+
+==When is it decreased?==
+  * With time
+  * When the [Entity entity] vomits
+  * When the [Entity entity] defecates
+
+==When is it increased?==
+When the [Entity entity] eats something with [Nutrition] properties > 0
