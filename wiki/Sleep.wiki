@@ -1,0 +1,16 @@
+#summary Sleep is part of the AntiCultureWorld project.
+
+Sleep is a [NeedStat need].
+
+==When too low==
+The [Entity entity]'s [Integrity integrity] is decreased
+
+==When too high==
+Nothing happens, but it means the [Entity entity] spends a lot of time sleeping rather than doing stuff.
+
+==When is it decreased?==
+  * With time
+  * When some highly demanding operators are used (not sure) 
+
+==When is it increased?==
+When the [Entity entity] uses the [Operator operator] [SleepOperator sleep]
