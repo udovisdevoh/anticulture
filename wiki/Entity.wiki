@@ -1,1 +1,3 @@
-#summary An entity is an object which can be used by [Operator Operators].
+#summary Entities are part of the AntiCultureWorld project.
+
+An *entity* is an object which can be used by [Operator Operators]. Some *entities* can be alive such as [Human Humans].
