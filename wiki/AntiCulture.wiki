@@ -6,5 +6,5 @@
 
 == List of AntiCulture projects ==
 
-  * AntiCulture World
-  * AntiCulture Music
+  * AntiCultureWorld
+  * AntiCultureMusic
