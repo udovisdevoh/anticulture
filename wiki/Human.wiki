@@ -1,0 +1,3 @@
+Humans are part of the AntiCultureWorld project.
+
+A *Human* is a type of [Species species].
