@@ -7,4 +7,5 @@
   * [OperationPrototype]
   * [SpeciesProperty]
   * [NeedStat Need]
+  * [Genome]
   * [Gene]
