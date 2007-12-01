@@ -1,3 +1,3 @@
 #summary An operator is similar to a verb in human language or a predicate in formal language.
 
-*Operators* use [entities] to destroy or spawn [entities] while altering [need stats].
+*Operators* use [entity entities] to destroy or spawn [entity entities] while altering [NeedStat needStats].
