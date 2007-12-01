@@ -8,7 +8,7 @@ Need are written as a float numbers inside a [Genome genome]. These float number
 ==Variable status aspect of Needs==
 A Need's current status level is variable. Time and some [Operations operations] may change it.
 
-==List of NeedStats==
+==List of Needs==
   * [Integrity]
   * [Food]
   * [Water]
