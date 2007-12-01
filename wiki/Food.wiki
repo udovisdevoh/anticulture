@@ -18,4 +18,4 @@ The [Entity entity]'s [Integrity integrity] is decreased
   * When the [Entity entity] defecates
 
 ==When is it altered?==
-When the [Entity entity] [Consume consumes] something with [Nutrition nutrition] properties
+When the [Entity entity] [Consume consumes] something with [Nutrition nutrition] [SpeciesProperty properties]
