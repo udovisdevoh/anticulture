@@ -1,0 +1,7 @@
+#summary Genes are part of the AntiCultureWorld project.
+
+Each gene is stored inside a [Genome genome].
+
+==Types of Genes==
+  * [NeedStat] Gene
+  * [Metagene]
