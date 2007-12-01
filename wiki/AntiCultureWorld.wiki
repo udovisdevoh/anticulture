@@ -3,5 +3,5 @@
 =Concepts used=
 
   * [Operators]
-  * Entities
-  * OperationPrototypes
+  * [Entities
+  * [OperationPrototypes]
