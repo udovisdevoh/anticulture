@@ -3,7 +3,7 @@
 A *NeedStat* represents a need which [Entity entities] (notably [Human humans]) have. Some needs are vital for an [Entity entity] while some others are just a big disadvantage when not fulfilled or over fulfilled.
 
 ==Genetic aspect of Needs==
-Need are written as a float numbers inside a [Genome genome]. These float number represent the ideal value for the current status' level.
+Each need is written as a float number inside a [Gene gene]. These float number represent the ideal value for the current status' level.
 
 ==Variable status aspect of Needs==
 A Need's current status level is variable. Time and some [Operations operations] may change it.
