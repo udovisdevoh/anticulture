@@ -1,6 +1,10 @@
 #summary Main page
 
-= List of AntiCulture projects =
+= AntiCulture =
+
+*AntiCulture* is a set of artificial intelligence research and random generators which simulate human culture
+
+== List of AntiCulture projects ==
 
   * AntiCulture World
   * AntiCulture Music
