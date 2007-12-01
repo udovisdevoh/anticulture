@@ -1,0 +1,15 @@
+#summary Integrity is a [NeedStats need] in the AntiCultureWorld project.
+
+==When too low==
+The [Entity entity] dies
+
+==When too high==
+Nothing happens
+
+==When is it increased?==
+  * When the [Entity entity] is healed
+  * When the [Entity entity] sleeps (not sure yet)
+  * When the [Entity entity] eats (not sure yet)
+
+==When is it decreased?==
+When the [Entity entity] is injured
