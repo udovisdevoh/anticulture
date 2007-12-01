@@ -1,3 +1,3 @@
 #summary Genomes are part of the AntiCultureWorld project.
 
-Genomes are used to store [Genes genes]. Each living [Entity entity] has a genome. The genome is mutated altered by reproduction which means the float numbers in [Gene genes] are slightly randomly altered.
+Genomes are used to store [Gene genes]. Each living [Entity entity] has a genome. The genome is mutated altered by reproduction which means the float numbers in [Gene genes] are slightly randomly altered.
