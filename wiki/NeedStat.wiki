@@ -1,0 +1,21 @@
+#summary NeedStats are part of the AntiCultureWorld project.
+
+NeedStats represents need which [entity entities] (notably [Human humans]) have. Some needs are vital for an [entity] while some others are just a big disadvantage when not fulfilled.
+
+==Genetic aspect of Needs==
+
+==Stat aspect of Needs==
+
+==List of NeedStats==
+
+  * [Integrity]
+  * [Food]
+  * [Water]
+  * [Light]
+  * [Heat]
+  * [Happiness]
+  * [SocialCohesion]
+  * [IntellectualStimulation]
+  * [ChildBirth]
+  * [MaleOrgasm]
+  * [FemaleOrgasm]
