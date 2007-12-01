@@ -5,3 +5,4 @@
   * [Operator]
   * [Entity]
   * [OperationPrototype]
+  * [NeedStat Need]
