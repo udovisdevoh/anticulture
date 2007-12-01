@@ -1,1 +1,0 @@
-#summary An operator is similar to a verb in human language or a predicate in formal language.
