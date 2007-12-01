@@ -1,6 +1,6 @@
 #summary NeedStats are part of the AntiCultureWorld project.
 
-NeedStats represents need which [entity entities] (notably [Human humans]) have. Some needs are vital for an [entity] while some others are just a big disadvantage when not fulfilled.
+NeedStats represents need which [Entity entities] (notably [Human humans]) have. Some needs are vital for an [Entity entity] while some others are just a big disadvantage when not fulfilled.
 
 ==Genetic aspect of Needs==
 
