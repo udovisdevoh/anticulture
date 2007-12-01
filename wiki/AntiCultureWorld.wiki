@@ -2,6 +2,6 @@
 
 =Concepts used=
 
-  * [Operators]
-  * [Entities]
-  * [OperationPrototypes]
+  * [Operator]
+  * [Entity]
+  * [OperationPrototype]
