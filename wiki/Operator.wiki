@@ -1,3 +1,15 @@
 #summary Operators are part of the AntiCultureWorld project.
 
 *Operators* use [Entity entities] to destroy or spawn [Entity entities] while altering [NeedStat NeedStats]. An operator is similar to a verb in human language or a predicate in formal language.
+
+==List of Operators==
+  * Consume
+  * Urinate
+  * Defecate
+  * Copulate
+  * Go
+  * Hit
+  * Vomit
+  * Push
+  * Sleep
+  * Strike
