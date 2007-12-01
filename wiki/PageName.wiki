@@ -2,5 +2,5 @@
 
 = List of AntiCulture projects =
 
-  * [AntiCulture World|World]
-  * [AntiCulture Music|World]
+  * AntiCulture World
+  * AntiCulture Music
