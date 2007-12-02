@@ -44,7 +44,7 @@ namespace AntiCulture.Worlds.Plugins.XnaGraphics
             if (mTextures.TryGetValue(entityName, out texture)) return texture;
             try
             {
-                texture = mContent.Load<Texture2D>("resources/icons/" + entityName);
+                texture = mContent.Load<Texture2D>("resources/entities/" + entityName);
                 mTextures[entityName] = texture;
             }
             catch (Exception)
@@ -58,7 +58,7 @@ namespace AntiCulture.Worlds.Plugins.XnaGraphics
         {
             if (loadAllContent)
             {
-                mUnknownTexture = mContent.Load<Texture2D>("resources/icons/unknown");
+                mUnknownTexture = mContent.Load<Texture2D>("resources/entities/unknown");
                 mFont = mContent.Load<SpriteFont>("resources/font");
             }
         }
