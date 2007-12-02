@@ -21,6 +21,11 @@ namespace AntiCulture.Worlds.Plugins.XnaGraphics
         private Thread mThread;
         private CanRenderFlag mCanRenderFlag = new CanRenderFlag();
 
+        public override string Name
+        {
+            get { return "XnaGraphics"; }
+        }
+
         public override void Init(World world)
         {
             mThread = new Thread(ThreadEntryPoint);
