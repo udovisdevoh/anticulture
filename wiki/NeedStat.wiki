@@ -9,7 +9,7 @@ Each need is written as a float number inside a [Gene gene]. These float number 
 A Need's current status level is variable. Time and some [Operations operations] may change it.
 
 ==List of Needs==
-  * [Integrity]
+  * [Integrity Health]
   * [Food]
   * [Water]
   * [Sleep]
