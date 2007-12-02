@@ -1,6 +1,6 @@
 #summary Integrity is part of the AntiCultureWorld project.
 
-Integrity is a [NeedStat need].
+Integrity is a [Properties property]. However, the [Human] [Species] implements it as a [NeedStat need].
 
 ==When too low==
 The [Entity entity] dies
