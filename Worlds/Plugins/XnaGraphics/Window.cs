@@ -58,7 +58,7 @@ namespace AntiCulture.Worlds.Plugins.XnaGraphics
         {
             if (loadAllContent)
             {
-                mUnknownTexture = mContent.Load<Texture2D>("resources/entities/unknown");
+                mUnknownTexture = mContent.Load<Texture2D>("resources/unknown");
                 mFont = mContent.Load<SpriteFont>("resources/font");
             }
         }
