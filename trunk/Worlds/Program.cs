@@ -88,8 +88,18 @@ namespace AntiCulture.Worlds
                     // Update plugins
                     for (int i = 0; i < mPlugins.Count; )
                     {
-                        if (mPlugins[i].Tick()) ++i;
-                        else mPlugins.RemoveAt(i);
+                        try
+                        {
+                            if (mPlugins[i].Tick()) ++i;
+                            else mPlugins.RemoveAt(i);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("Plugin " + mPlugins[i].Name + " failed to update : " + e.Message);
+                            try { mPlugins[i].Shutdown(); }
+                            catch (Exception e2) { Console.WriteLine("...and to shutdown : " + e2.Message); }
+                            mPlugins.RemoveAt(i);
+                        }
                     }
                 }
 
@@ -98,7 +108,17 @@ namespace AntiCulture.Worlds
 
             // Shutdown plugins
             foreach (Plugin plugin in mPlugins)
-                plugin.Shutdown();
+            {
+                try
+                {
+                    plugin.Shutdown();
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Plugin " + plugin.Name + " failed to shutdown : " + e.Message);
+                }
+            }
+            mPlugins.Clear();
         }
 
         private void ExecuteCommand(string command, string[] arguments)

@@ -49,6 +49,7 @@ namespace AntiCulture.Worlds.Plugins.XnaGraphics
             }
             catch (Exception)
             {
+                mTextures[entityName] = mUnknownTexture;
                 return mUnknownTexture;
             }
             return texture;
