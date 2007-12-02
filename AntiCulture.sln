@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual C# Express 2005
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.BasicNeuralNetwork", "AI\BasicNeuralNetwork\AI.BasicNeuralNetwork.csproj", "{3BA260E0-18AF-4B5F-8A25-E09036F42246}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI.NeuralNetwork", "AI\NeuralNetwork\AI.NeuralNetwork.csproj", "{3BA260E0-18AF-4B5F-8A25-E09036F42246}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Audio.Midi", "Audio\Midi\Audio.Midi.csproj", "{6FE0A492-5ACD-4AFA-AAEF-C43306CFAC78}"
 EndProject
