@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace AntiCulture.AI.BasicNeuralNetwork
+namespace AntiCulture.AI
 {
     internal class NeuronLayer
     {

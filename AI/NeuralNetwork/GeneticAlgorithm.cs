@@ -2,18 +2,18 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace AntiCulture.AI.BasicNeuralNetwork
+namespace AntiCulture.AI
 {
+    public delegate float[] Crossover(float[] dad, float[] mom, Random random);
+    public delegate void Mutator(float[] genome, float rate, Random random);
+
     public class GeneticAlgorithm
     {
         private List<Individual> mIndividuals = new List<Individual>();
-        private double mPerturbationRate = 0.1;
-        private double mMaxPerturbationAmount = 0.3;
-        private double mMutationRate = 0.03;
-        private double mCrossoverRate = 0.7;
+        private Dictionary<Mutator, float> mMutators = new Dictionary<Mutator, float>();
+        private Crossover mCrossover = null;
         private uint mEliteCount = 0;
         private uint mEliteCopies = 1;
-        private bool mPerturbateElites = false;
         private bool mMutateElites = false;
         private uint mTournamentCompetitors = 2;
 
