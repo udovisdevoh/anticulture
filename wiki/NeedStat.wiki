@@ -1,6 +1,6 @@
-#summary NeedStats are part of the AntiCultureWorld project.
+#summary Needs are part of the AntiCultureWorld project.
 
-A *NeedStat* represents a need which [Entity entities] (notably [Human humans]) have. Some needs are vital for an [Entity entity] while some others are just a big disadvantage when not fulfilled or over fulfilled.
+A *Need* represents a need which [Entity entities] (notably [Human humans]) have. Some needs are vital for an [Entity entity] while some others are just a big disadvantage when not fulfilled or over fulfilled.
 
 ==Genetic aspect of Needs==
 Each need is written as a float number inside a [Gene gene]. These float number represent the ideal value for the current status' level.
