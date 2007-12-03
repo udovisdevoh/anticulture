@@ -405,10 +405,8 @@ namespace AntiCulture.Worlds
             Need need = FindNeed(name);
             if (need != null) need.Value += value;
         }
-        #endregion
 
-        #region Private methods
-        private Need FindNeed(string name)
+        public Need FindNeed(string name)
         {
             foreach (Need i in mNeeds)
             {
@@ -417,7 +415,9 @@ namespace AntiCulture.Worlds
             }
             return null;
         }
+        #endregion
 
+        #region Private methods
         private void UpdateInventory()
         {
             for (int i = 0; i < mInventory.Count; )
