@@ -44,6 +44,7 @@ namespace AntiCulture.Worlds
             encyclopedia.Operators.Add(Operations.Push.Operator);
             encyclopedia.Operators.Add(Operations.Shit.Operator);
             encyclopedia.Operators.Add(Operations.Pee.Operator);
+            encyclopedia.Operators.Add(Operations.Talk.Operator);
 
             // Set this encyclopedia to be used by our world
             mWorld.Encyclopedia = encyclopedia;
