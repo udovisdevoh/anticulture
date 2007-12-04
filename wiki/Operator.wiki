@@ -13,3 +13,4 @@
   * Push
   * Sleep
   * Strike
+  * ShareKnowledge
