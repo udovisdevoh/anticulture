@@ -30,7 +30,7 @@ namespace AntiCulture.Worlds
             encyclopedia.Species.Add(Entities.Tree.Species);
             encyclopedia.Species.Add(Entities.Vomit.Species);
             encyclopedia.Species.Add(Entities.HealingPlant.Species);
-            encyclopedia.Species.Add(Entities.Feces.Species);
+            encyclopedia.Species.Add(Entities.Excrement.Species);
             encyclopedia.Species.Add(Entities.Urine.Species);
 
             // Register operators
