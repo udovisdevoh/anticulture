@@ -8,4 +8,4 @@ ShareKnowledge is an [Operator operator]. It sends a [meme] into another individ
 There should be XX% chances of using the best meme. If not, there should be XX% chances of using the 2nd best meme. We could eventually put the XX constant into a [metagene].
 
 ==Finding something original==
-The person sharing knowledge could also find the best [meme] to share by looking at the other person's [culture] in order to exclude every [meme] the person already has when making his choice.
+The person sharing knowledge could also find the best [meme] to share by looking at the other person's [culture]. The speaking person would then ignore his best meme and pick the next one if the person recieving the meme's best meme is the same as the person speaking.
