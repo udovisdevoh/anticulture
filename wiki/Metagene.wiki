@@ -9,3 +9,5 @@ Some constants will be eventually replaced by metagenes which will be stored ins
 ==List of possible metagenes==
   * Influence/resistance to shared knowledge
   * Influence/resistance to criticizm
+  * Randomness in actions
+  * Mutability in reproduction
