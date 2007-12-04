@@ -15,4 +15,4 @@
   * Strike
   * ShareKnowledge
   * CriticizeKnowledge
-  * CommentReaction
+  * CommentAction
