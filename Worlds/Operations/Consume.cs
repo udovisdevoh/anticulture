@@ -51,13 +51,13 @@ namespace AntiCulture.Worlds.Operations
         #region Overriden methods
         public override void Update(Timer timer, Random random)
         {
-            // Negative tastiness makes more hunger
+            // Negative tastiness makes more need of food
             float nutrition = mWhat.Properties["nutrition"];
-            if (nutrition != 0) mWho.Stimulate("hunger", -nutrition * timer.TimeDelta);
+            if (nutrition != 0) mWho.Stimulate("food", -nutrition * timer.TimeDelta);
             float healing = mWhat.Properties["healing"];
-            if (healing != 0) mWho.Stimulate("integrity", healing * timer.TimeDelta);
+            if (healing != 0) mWho.Stimulate("health", healing * timer.TimeDelta);
             float hydration = mWhat.Properties["hydration"];
-            if (hydration != 0) mWho.Stimulate("thirst", hydration * timer.TimeDelta);
+            if (hydration != 0) mWho.Stimulate("water", hydration * timer.TimeDelta);
             mWhat.Integrity -= timer.TimeDelta;
             if (!mWhat.IsAlive) mTimeLeft = 0.0f;
             else mTimeLeft -= timer.TimeDelta;

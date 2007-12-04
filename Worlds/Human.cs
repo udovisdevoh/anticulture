@@ -161,22 +161,22 @@ namespace AntiCulture.Worlds
             mWorld = world;
             Properties["weight"] = 70.0f;
             Properties["integrity"] = 4.0f;
-            mNeeds.Add(new Need("hunger", 0.0f, 1.0f, 0.0125f));
-            mNeeds.Add(new Need("sleepiness", 0.0f, 1.0f, 0.025f));
-            mNeeds.Add(new Need("integrity", 5.0f, 1.0f, 0.0f));
-            mNeeds.Add(new Need("thirst", 0.0f, 1.0f, 0.0125f));
+            mNeeds.Add(new Need("food", 0.0f, 1.0f, 0.0125f));
+            mNeeds.Add(new Need("sleep", 0.0f, 1.0f, 0.025f));
+            mNeeds.Add(new Need("health", 5.0f, 1.0f, 0.0f));
+            mNeeds.Add(new Need("water", 0.0f, 1.0f, 0.0125f));
         }
         #endregion
 
         #region Overriden Properties
         public override float Integrity
         {
-            get { return FindNeed("integrity").Value; }
+            get { return FindNeed("health").Value; }
             set
             {
                 if (IsAlive)
                 {
-                    float integrity = (FindNeed("integrity").Value = value);
+                    float integrity = (FindNeed("health").Value = value);
                     if (integrity <= 0.0f)
                         base.Die();
                 }

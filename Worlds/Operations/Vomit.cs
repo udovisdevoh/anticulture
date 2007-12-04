@@ -42,8 +42,8 @@ namespace AntiCulture.Worlds.Operations
         #region Overriden methods
         public override void Update(Timer timer, Random random)
         {
-            mWho.Stimulate("hunger", timer.TimeDelta);
-            mWho.Stimulate("integrity", timer.TimeDelta * -0.25f);
+            mWho.Stimulate("food", timer.TimeDelta);
+            mWho.Stimulate("health", timer.TimeDelta * -0.25f);
             mTimeLeft -= timer.TimeDelta;
             if (mTimeLeft <= 0.0f)
             {
