@@ -1,0 +1,5 @@
+#summary ShareKnowledge is part of the AntiCultureWorld project.
+
+ShareKnowledge is an [Operator oparator]. It sends a [meme] into another individual's [culture].
+
+There should be XX% chances of using the best meme. If not, there should be XX% chances of using the 2nd best meme. We could eventually put the XX constant into a [metagene].
