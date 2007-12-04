@@ -37,7 +37,7 @@
   <ItemGroup>
     <Compile Include="Encyclopedia.cs" />
     <Compile Include="Entities\Apple.cs" />
-    <Compile Include="Entities\Excrement.cs" />
+    <Compile Include="Entities\Feces.cs" />
     <Compile Include="Entities\Urine.cs" />
     <Compile Include="Entities\Water.cs" />
     <Compile Include="Entities\HealingPlant.cs" />
