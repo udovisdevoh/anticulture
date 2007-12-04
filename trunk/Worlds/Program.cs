@@ -30,21 +30,21 @@ namespace AntiCulture.Worlds
             encyclopedia.Species.Add(Entities.Tree.Species);
             encyclopedia.Species.Add(Entities.Vomit.Species);
             encyclopedia.Species.Add(Entities.HealingPlant.Species);
-            encyclopedia.Species.Add(Entities.Poo.Species);
-            encyclopedia.Species.Add(Entities.Piss.Species);
+            encyclopedia.Species.Add(Entities.Feces.Species);
+            encyclopedia.Species.Add(Entities.Urine.Species);
 
             // Register operators
             // Note: RandomOperator is NOT registered as it currently cannot
             //       be tracked properly by entities.
             encyclopedia.Operators.Add(Operations.Go.Operator);
-            encyclopedia.Operators.Add(Operations.Eat.Operator);
+            encyclopedia.Operators.Add(Operations.Consume.Operator);
             encyclopedia.Operators.Add(Operations.Hit.Operator);
             encyclopedia.Operators.Add(Operations.Sleep.Operator);
-            encyclopedia.Operators.Add(Operations.Puke.Operator);
+            encyclopedia.Operators.Add(Operations.Vomit.Operator);
             encyclopedia.Operators.Add(Operations.Push.Operator);
-            encyclopedia.Operators.Add(Operations.Shit.Operator);
-            encyclopedia.Operators.Add(Operations.Pee.Operator);
-            encyclopedia.Operators.Add(Operations.Talk.Operator);
+            encyclopedia.Operators.Add(Operations.Defecate.Operator);
+            encyclopedia.Operators.Add(Operations.Urinate.Operator);
+            encyclopedia.Operators.Add(Operations.ShareKnowledge.Operator);
 
             // Set this encyclopedia to be used by our world
             mWorld.Encyclopedia = encyclopedia;

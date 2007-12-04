@@ -82,6 +82,12 @@
       <Processor>SpriteTextureProcessor</Processor>
       <Name>apple</Name>
     </Content>
+    <Content Include="resources\entities\feces.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>feces</Name>
+    </Content>
     <Content Include="resources\entities\female.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
       <Importer>TextureImporter</Importer>
@@ -118,23 +124,11 @@
       <Processor>SpriteTextureProcessor</Processor>
       <Name>mannonstick</Name>
     </Content>
-    <Content Include="resources\entities\pee.png">
-      <XNAUseContentPipeline>true</XNAUseContentPipeline>
-      <Importer>TextureImporter</Importer>
-      <Processor>SpriteTextureProcessor</Processor>
-      <Name>pee</Name>
-    </Content>
     <Content Include="resources\entities\plant.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
       <Importer>TextureImporter</Importer>
       <Processor>SpriteTextureProcessor</Processor>
       <Name>plant</Name>
-    </Content>
-    <Content Include="resources\entities\poo.png">
-      <XNAUseContentPipeline>true</XNAUseContentPipeline>
-      <Importer>TextureImporter</Importer>
-      <Processor>SpriteTextureProcessor</Processor>
-      <Name>poo</Name>
     </Content>
     <Content Include="resources\entities\rock.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
@@ -165,6 +159,12 @@
       <Importer>TextureImporter</Importer>
       <Processor>SpriteTextureProcessor</Processor>
       <Name>Tree</Name>
+    </Content>
+    <Content Include="resources\entities\urine.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>urine</Name>
     </Content>
     <Content Include="resources\entities\vomit.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>

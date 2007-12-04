@@ -4,23 +4,23 @@ using System.Text;
 
 namespace AntiCulture.Worlds.Entities
 {
-    public class Piss : Entity
+    public class Feces : Entity
     {
         #region Species stuff
         public new static readonly Species Species;
 
-        static Piss()
+        static Feces()
         {
-            Species = new Species("piss", "titi", Factory);
-            Species.Properties["weight"] = float.MaxValue;
+            Species = new Species("feces", "scrunge", Factory);
+            Species.Properties["weight"] = 0.25f;
+            Species.Properties["nutrition"] = 0.02f;
             Species.Properties["healing"] = -0.4f;
-            Species.Properties["hydration"] = 0.5f;
         }
 
-        private static Entity Factory(World world) { return new Piss(); }
+        private static Entity Factory(World world) { return new Feces(); }
         #endregion
 
-        public Piss()
+        public Feces()
             : base(Species)
         {
             Integrity = 1.0f;

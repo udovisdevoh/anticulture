@@ -4,14 +4,14 @@ using System.Text;
 
 namespace AntiCulture.Worlds.Operations
 {
-    public class Talk : Operation
+    public class ShareKnowledge : Operation
     {
         #region Static operator
-        public static readonly Operator Operator = new Operator("talk", Factory, 1);
+        public static readonly Operator Operator = new Operator("shareknowledge", Factory, 1);
 
         private static Operation Factory(Human who, Entity[] what)
         {
-            if (what.Length != 1) throw new ArgumentException("Talk takes a single argument");
+            if (what.Length != 1) throw new ArgumentException("ShareKnowledge takes a single argument");
 
             // Don't do it if the target is too far
             if (Vector.Distance(who.Position, what[0].Position) > 2.0f) return null;
@@ -40,7 +40,7 @@ namespace AntiCulture.Worlds.Operations
 
             if (bestSolution == null) return null;
 
-            return new Talk(who, what[0] as Human, bestNeed, bestSolution);
+            return new ShareKnowledge(who, what[0] as Human, bestNeed, bestSolution);
         }
         #endregion
 
@@ -53,7 +53,7 @@ namespace AntiCulture.Worlds.Operations
         #endregion
 
         #region Constructor
-        public Talk(Human who, Human what, Human.Need bestNeed, Human.Need.Solution bestSolution)
+        public ShareKnowledge(Human who, Human what, Human.Need bestNeed, Human.Need.Solution bestSolution)
         {
             mWho = who;
             mWhat = what;
