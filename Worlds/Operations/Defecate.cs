@@ -4,14 +4,14 @@ using System.Text;
 
 namespace AntiCulture.Worlds.Operations
 {
-    public class Shit : Operation
+    public class Defecate : Operation
     {
         #region Static operator
-        public static readonly Operator Operator = new Operator("shit", Factory, 0);
+        public static readonly Operator Operator = new Operator("defecate", Factory, 0);
 
         private static Operation Factory(Human who, Entity[] what)
         {
-            return new Shit(who);
+            return new Defecate(who);
         }
         #endregion
 
@@ -21,7 +21,7 @@ namespace AntiCulture.Worlds.Operations
         #endregion
 
         #region Constructor
-        public Shit(Human who)
+        public Defecate(Human who)
         {
             mWho = who;
         }
@@ -46,12 +46,12 @@ namespace AntiCulture.Worlds.Operations
             mTimeLeft -= timer.TimeDelta;
             if (mTimeLeft <= 0.0f)
             {
-                Species species = mWho.World.Encyclopedia.FindSpecies("poo");
+                Species species = mWho.World.Encyclopedia.FindSpecies("feces");
                 if (species != null)
                 {
-                    Entity poo = species.Factory(mWho.World);
-                    poo.Position = mWho.Position;
-                    mWho.World.Entities.Add(poo);
+                    Entity feces = species.Factory(mWho.World);
+                    feces.Position = mWho.Position;
+                    mWho.World.Entities.Add(feces);
                 }
             }
         }

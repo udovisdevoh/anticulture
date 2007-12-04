@@ -4,21 +4,21 @@ using System.Text;
 
 namespace AntiCulture.Worlds.Operations
 {
-    public class Eat : Operation
+    public class Consume : Operation
     {
         #region Static operator
-        public static readonly Operator Operator = new Operator("eat", Factory, 1);
+        public static readonly Operator Operator = new Operator("consume", Factory, 1);
 
         private static Operation Factory(Human who, Entity[] what)
         {
-            if (what.Length != 1) throw new ArgumentException("Eat takes a single argument");
+            if (what.Length != 1) throw new ArgumentException("Consume takes a single argument");
 
             // Don't do it if the target is too far
             if (Vector.Distance(who.Position, what[0].Position) > 0.5f) return null;
             // Disable intraspecies cannibalism
             if (((Entity)who).Species == what[0].Species) return null;
 
-            return new Eat(who, what[0]);
+            return new Consume(who, what[0]);
         }
         #endregion
 
@@ -29,7 +29,7 @@ namespace AntiCulture.Worlds.Operations
         #endregion
 
         #region Constructor
-        public Eat(Human who, Entity what)
+        public Consume(Human who, Entity what)
         {
             mWho = who;
             mWhat = what;
@@ -65,7 +65,7 @@ namespace AntiCulture.Worlds.Operations
 
         public override string ToString()
         {
-            //When mWhat is more liquid than solid, we say "drink" instead of "eat"
+            //When mWhat is more liquid than solid, we say "drink" instead of "consume"
             if (mWhat.Properties["hydration"] > mWhat.Properties["nutrition"])
             {
                 return "drink " + mWhat.Name;

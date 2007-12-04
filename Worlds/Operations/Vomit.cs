@@ -4,14 +4,14 @@ using System.Text;
 
 namespace AntiCulture.Worlds.Operations
 {
-    public class Pee : Operation
+    public class Vomit : Operation
     {
         #region Static operator
-        public static readonly Operator Operator = new Operator("pee", Factory, 0);
+        public static readonly Operator Operator = new Operator("vomit", Factory, 0);
 
         private static Operation Factory(Human who, Entity[] what)
         {
-            return new Pee(who);
+            return new Vomit(who);
         }
         #endregion
 
@@ -21,7 +21,7 @@ namespace AntiCulture.Worlds.Operations
         #endregion
 
         #region Constructor
-        public Pee(Human who)
+        public Vomit(Human who)
         {
             mWho = who;
         }
@@ -42,23 +42,24 @@ namespace AntiCulture.Worlds.Operations
         #region Overriden methods
         public override void Update(Timer timer, Random random)
         {
-            mWho.Stimulate("thirst", timer.TimeDelta);
+            mWho.Stimulate("hunger", timer.TimeDelta);
+            mWho.Stimulate("integrity", timer.TimeDelta * -0.25f);
             mTimeLeft -= timer.TimeDelta;
             if (mTimeLeft <= 0.0f)
             {
-                Species species = mWho.World.Encyclopedia.FindSpecies("piss");
+                Species species = mWho.World.Encyclopedia.FindSpecies("vomit");
                 if (species != null)
                 {
-                    Entity pee = species.Factory(mWho.World);
-                    pee.Position = mWho.Position;
-                    mWho.World.Entities.Add(pee);
+                    Entity vomit = species.Factory(mWho.World);
+                    vomit.Position = mWho.Position;
+                    mWho.World.Entities.Add(vomit);
                 }
             }
         }
 
         public override string ToString()
         {
-            return "pee";
+            return "puke";
         }
         #endregion
     }
