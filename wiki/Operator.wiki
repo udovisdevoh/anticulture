@@ -3,16 +3,24 @@
 *Operators* use [Entity entities] to destroy or spawn [Entity entities] while altering [NeedStat NeedStats]. An operator is similar to a verb in human language or a predicate in formal language.
 
 ==List of Operators==
+
+===Basic operators===
   * Consume
   * Urinate
   * Defecate
   * Copulate
+  * Vomit
+  * Sleep
+
+===Physical operators===
   * Go
   * Hit
-  * Vomit
   * Push
-  * Sleep
   * Strike
+
+===Communicative operators===
   * ShareKnowledge
   * CriticizeKnowledge
   * CommentAction
+  * Write
+  * Read
