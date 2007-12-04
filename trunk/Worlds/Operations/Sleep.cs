@@ -42,7 +42,7 @@ namespace AntiCulture.Worlds.Operations
         #region Overriden methods
         public override void Update(Timer timer, Random random)
         {
-            mWho.Stimulate("sleepiness", -timer.TimeDelta);
+            mWho.Stimulate("sleep", -timer.TimeDelta);
             mTimeLeft -= timer.TimeDelta;
         }
 
