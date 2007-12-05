@@ -15,3 +15,10 @@ After some time, the new entity is free and the mother's [ChildBirth] [NeedStat 
 
 ==Effects same sex copulation==
 When two female individuals copulate, their [MaleOrgasm] or [FemaleOrgasm] [NeedStat need] is slightly decreased.
+
+==Adverse effects==
+If we don't add adverse effects to copulation, [Entity entities] will copulate all the time resulting in famines and instinctions.
+
+===List of proposed adverse effect of copulation===
+  * Decreased health
+  * Decreased lifespan
