@@ -5,7 +5,7 @@
 When two individuals of diffrent sex copulate, the male's [MaleOrgasm] [NeedStat need] is largely decreased while the female's [FemaleOrgasm] [NeedStat need] is decreased too.
 
 ===Creation of a new entity===
-A new individual is created by randomly selecting [Gene genes] from the parents and by randomly mutating them.
+A new individual is created by randomly selecting [Gene genes] from the parents and by randomly mutating them. The [NeedStat need] [Gene genes] are then [Normalization normalized].
 
 ===Pregnancy===
 The female becomes pregnant and carries the new [Entity entity].
