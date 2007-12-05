@@ -1,14 +1,14 @@
 #summary A virtual human culture in which people can evolve, learn and exchange knowledge.
 
 =Concepts used=
-
   * [Operator]
-  * [Entity]
   * [OperationPrototype]
-  * [SpeciesProperty]
-  * [NeedStat Need]
-  * [Culture]
-  * [Meme]
-  * [Genome]
-  * [Gene]
   * [World]
+    * [Entity]
+      * [Genome]
+        * [Gene]
+      * [Culture]
+        * [Meme]
+      * [Species]
+        * [SpeciesProperty]
+        * [NeedStat Need]
