@@ -1,0 +1,17 @@
+#summary Copulate is part of the AntiCultureWorld project.
+
+==Effects of male-female copulation==
+===Orgasm===
+When two individuals of diffrent sex copulate, the male's [MaleOrgasm] [NeedStat need] is largely decreased while the female's [FemaleOrgasm] [NeedStat need] is decreased too.
+
+===Creation of a new entity===
+A new individual is created by randomly selecting [Gene genes] from the parents and by randomly mutating them.
+
+===Pregnancy===
+The female becomes pregnant and carries the new [Entity entity].
+
+===Child Birth===
+After some time, the new entity is free and the mother's [ChildBirth] [NeedStat need] is decreased.
+
+==Effects same sex copulation==
+When two female individuals copulate, their [MaleOrgasm] or [FemaleOrgasm] [NeedStat need] is slightly decreased.
