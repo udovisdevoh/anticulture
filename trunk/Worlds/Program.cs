@@ -189,6 +189,29 @@ namespace AntiCulture.Worlds
                 }
             }
             #endregion
+            #region loadspecies command
+            else if (command == "loadspecies")
+            {
+                if (arguments.Length != 1)
+                {
+                    Console.WriteLine("The \"loadspecies\" command takes one argument");
+                }
+                else
+                {
+                    try
+                    {
+                        Species species = SimpleSpecies.FromFile("species\\" + arguments[0] + ".ssd");
+                        mWorld.Encyclopedia.Species.Add(species);
+                        uint count = (arguments.Length == 2) ? uint.Parse(arguments[1]) : 1;
+                        Console.WriteLine("Species successfully loaded");
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine("Failed to load species : " + e.Message);
+                    }
+                }
+            }
+               #endregion
             #region track command
             else if (command == "track")
             {
