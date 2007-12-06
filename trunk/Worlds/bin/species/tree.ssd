@@ -1,0 +1,7 @@
+name = cuboire
+integrity = 100
+weight = 1000
+healing = -0.2
+nutrition = 0.1
+lifespan = 120
+successor = decomposition

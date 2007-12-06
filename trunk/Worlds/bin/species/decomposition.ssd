@@ -1,0 +1,6 @@
+name = goula
+weight = 1.0
+integrity = 2
+lifespan = 15
+healing = -0.2
+successor = mineral
