@@ -26,7 +26,7 @@ namespace AntiCulture.Worlds
         public Species FindSpecies(string name)
         {
             foreach (Species i in mSpecies)
-                if (i.Name.Equals(name, StringComparison.CurrentCultureIgnoreCase))
+                if (i.Name.Equals(name, StringComparison.InvariantCultureIgnoreCase))
                     return i;
             return null;
         }
@@ -34,7 +34,7 @@ namespace AntiCulture.Worlds
         public Operator FindOperator(string name)
         {
             foreach (Operator i in mOperators)
-                if (i.Name.Equals(name, StringComparison.CurrentCultureIgnoreCase))
+                if (i.Name.Equals(name, StringComparison.InvariantCultureIgnoreCase))
                     return i;
             return null;
         }
