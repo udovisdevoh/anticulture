@@ -42,6 +42,10 @@ namespace AntiCulture.Worlds
         #endregion
 
         #region Constructors
+        public Species(string name)
+            : this(name, null)
+        {}
+
         public Species(string name, EntityFactory factory)
         {
             mName = name.ToLower();
@@ -75,6 +79,7 @@ namespace AntiCulture.Worlds
         public EntityFactory Factory
         {
             get { return mFactory; }
+            set { mFactory = value; }
         }
         #endregion
     }

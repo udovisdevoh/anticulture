@@ -57,6 +57,8 @@
     <Compile Include="Operations\Vomit.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="RandomOperation.cs" />
+    <Compile Include="SimpleEntity.cs" />
+    <Compile Include="SimpleSpecies.cs" />
     <Compile Include="Species.cs" />
     <Compile Include="Human.cs" />
     <Compile Include="Operation.cs" />
