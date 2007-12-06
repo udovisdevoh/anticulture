@@ -53,11 +53,22 @@ namespace AntiCulture.Worlds.Operations
         {
             // Negative tastiness makes more need of food
             float nutrition = mWhat.Properties["nutrition"];
-            if (nutrition != 0) mWho.Stimulate("food", -nutrition * timer.TimeDelta);
+            if (nutrition != 0)
+            {
+                mWho.Stimulate("food", -nutrition * timer.TimeDelta);//Decrease need for food
+                mWho.Stimulate("defecation", nutrition * timer.TimeDelta);//Increase need for defecation
+            }
+
             float healing = mWhat.Properties["healing"];
-            if (healing != 0) mWho.Stimulate("health", healing * timer.TimeDelta);
+            if (healing != 0) mWho.Stimulate("health", -healing * timer.TimeDelta);//Decrease need for healing
+
             float hydration = mWhat.Properties["hydration"];
-            if (hydration != 0) mWho.Stimulate("water", hydration * timer.TimeDelta);
+            if (hydration != 0)
+            {
+                mWho.Stimulate("water", -hydration * timer.TimeDelta);//Decrease need for water
+                mWho.Stimulate("urination", hydration * timer.TimeDelta);//Increase need for urination
+            }
+
             mWhat.Integrity -= timer.TimeDelta;
             if (!mWhat.IsAlive) mTimeLeft = 0.0f;
             else mTimeLeft -= timer.TimeDelta;

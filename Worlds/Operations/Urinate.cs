@@ -42,7 +42,8 @@ namespace AntiCulture.Worlds.Operations
         #region Overriden methods
         public override void Update(Timer timer, Random random)
         {
-            mWho.Stimulate("water", timer.TimeDelta);
+            mWho.Stimulate("urination", -timer.TimeDelta);//Decrease need for urination
+
             mTimeLeft -= timer.TimeDelta;
             if (mTimeLeft <= 0.0f)
             {

@@ -137,6 +137,7 @@ namespace AntiCulture.Worlds
         public const float Randomness = 0.3f;
         public const float EyeSight = 10.0f;
         public const float LifeSpan = 60.0f * 5.0f; // 5 minutes
+        public const float MaximumIntegrity = 4.0f; //Maximum integrity for a human being
         #endregion
 
         #region Data members
@@ -161,10 +162,13 @@ namespace AntiCulture.Worlds
             mWorld = world;
             Properties["weight"] = 70.0f;
             Properties["integrity"] = 4.0f;
-            mNeeds.Add(new Need("food", 0.0f, 1.0f, 0.0125f));
             mNeeds.Add(new Need("sleep", 0.0f, 1.0f, 0.025f));
             mNeeds.Add(new Need("health", 5.0f, 1.0f, 0.0f));
+            mNeeds.Add(new Need("food", 0.0f, 1.0f, 0.0125f));
+            mNeeds.Add(new Need("defecation", 0.0f, 1.0f, 0f));           
             mNeeds.Add(new Need("water", 0.0f, 1.0f, 0.0125f));
+            mNeeds.Add(new Need("urination", 0.0f, 1.0f, 0f));
+            mNeeds.Add(new Need("socialcohesion", 0.0f, 1.0f, 0.0125f));
         }
         #endregion
 
@@ -369,6 +373,42 @@ namespace AntiCulture.Worlds
             if (mRecentOperations.Count > 5)
                 mRecentOperations.RemoveRange(0, mRecentOperations.Count - 5);
         }
+        
+        
+        //Get entity's integrity from human health need
+        public override float GetProperty(string name)
+        {
+            if (name == "integrity")
+            {
+                return MaximumIntegrity - FindNeed("health").Value;
+            }
+            else
+                return base.GetProperty(name);
+        }
+        
+
+        
+        //Change human health need according to desired entity integrity
+        public override void SetProperty(string name, float value)
+        {
+            if (name == "integrity")
+            {
+                Need need = FindNeed("health");
+
+                if (need !=null)
+                {
+                    if (value <= 0.0f)
+                        Die();
+                    else if (value > MaximumIntegrity)
+                        need.Value = 0.0f;
+                    else
+                        need.Value = MaximumIntegrity - value;
+                }
+            }
+            else
+                base.SetProperty(name, value);
+        }
+
         #endregion
 
         #region New public methods
