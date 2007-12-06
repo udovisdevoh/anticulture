@@ -282,10 +282,8 @@ namespace AntiCulture.Worlds
                 {
                     try
                     {
-                        string path = Assembly.GetExecutingAssembly().Location;
-                        path = path.Substring(0, path.LastIndexOfAny(new char[] { '\\', '/' }) + 1);
-                        path += "plugins\\";
-                        Assembly assembly = Assembly.LoadFile(path + arguments[0] + ".dll");
+                        string path = System.IO.Directory.GetCurrentDirectory() + "\\plugins\\" + arguments[0] + ".dll";
+                        Assembly assembly = Assembly.LoadFile(path);
                         Plugin plugin = (Plugin)assembly.CreateInstance("AntiCulture.Worlds.Plugins." + arguments[0] + ".Plugin", true);
                         if (plugin == null) throw new Exception("Didn't find class " + arguments[1]);
                         plugin.Init(mWorld);
