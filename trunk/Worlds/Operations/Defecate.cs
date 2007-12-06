@@ -42,7 +42,7 @@ namespace AntiCulture.Worlds.Operations
         #region Overriden methods
         public override void Update(Timer timer, Random random)
         {
-            mWho.Stimulate("food", timer.TimeDelta);
+            mWho.Stimulate("defecation", -timer.TimeDelta);//Decrease need for defecation
             mTimeLeft -= timer.TimeDelta;
             if (mTimeLeft <= 0.0f)
             {
