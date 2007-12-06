@@ -1,0 +1,8 @@
+name = roadrash
+integrity = 1
+weight = 1000000
+healing = -0.2
+hydration = 0.25
+nutrition = 0.05
+lifespan = 10
+successor = decomposition

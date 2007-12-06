@@ -1,0 +1,6 @@
+name = catl
+integrity = 6
+weight = 4.0
+healing = -0.5
+lifespan = 180
+successor = mineral

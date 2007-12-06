@@ -1,0 +1,5 @@
+name = glouglou
+integrity = 1
+weight = 1000000
+hydration = 0.8
+lifespan = 10

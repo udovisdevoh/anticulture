@@ -1,0 +1,8 @@
+name = matatou
+integrity = 6
+weight = 6
+healing = -0.05
+nutrition = 0.8
+hydration = 0.1
+lifespan = 35
+successor = decomposition

@@ -13,7 +13,7 @@ namespace AntiCulture.Worlds.Entities
         {
             Species = new Species("water", "glouglou", Factory);
             Species.Properties["weight"] = float.MaxValue;
-            Species.Properties["hydration"] = 0.5f;
+            Species.Properties["hydration"] = 0.8f;
         }
 
         private static Entity Factory(World world) { return new Water(); }

@@ -1,0 +1,8 @@
+name = srabis
+integrity = 3
+weight = 1.0
+nutrition = 0.1
+healing = 0.2
+hydration = 0.02
+lifespan = 35
+successor = decomposition

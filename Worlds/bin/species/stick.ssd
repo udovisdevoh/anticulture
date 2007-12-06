@@ -1,0 +1,5 @@
+name = gikpo
+weight = 4
+integrity = 2
+lifespan = 40
+successor = decomposition

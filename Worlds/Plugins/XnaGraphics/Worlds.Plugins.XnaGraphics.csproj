@@ -82,6 +82,18 @@
       <Processor>SpriteTextureProcessor</Processor>
       <Name>apple</Name>
     </Content>
+    <Content Include="resources\entities\corpse.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>corpse</Name>
+    </Content>
+    <Content Include="resources\entities\decomposition.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>decomposition</Name>
+    </Content>
     <Content Include="resources\entities\feces.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
       <Importer>TextureImporter</Importer>
@@ -124,6 +136,12 @@
       <Processor>SpriteTextureProcessor</Processor>
       <Name>mannonstick</Name>
     </Content>
+    <Content Include="resources\entities\mineral.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>mineral</Name>
+    </Content>
     <Content Include="resources\entities\plant.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
       <Importer>TextureImporter</Importer>
@@ -147,6 +165,12 @@
       <Importer>TextureImporter</Importer>
       <Processor>SpriteTextureProcessor</Processor>
       <Name>stick</Name>
+    </Content>
+    <Content Include="resources\entities\stone.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>stone</Name>
     </Content>
     <Content Include="resources\entities\torch.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>

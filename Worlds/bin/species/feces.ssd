@@ -1,0 +1,7 @@
+name = scrunge
+integrity = 1
+weight = 0.25
+nutrition = 0.02
+healing = -0.4
+lifespan = 10
+successor = decomposition

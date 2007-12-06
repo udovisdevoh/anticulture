@@ -1,0 +1,8 @@
+name = itor
+integrity = 60
+weight = 60
+healing = -0.5
+nutrition = 8
+hydration = 1
+lifespan = 35
+successor = decomposition

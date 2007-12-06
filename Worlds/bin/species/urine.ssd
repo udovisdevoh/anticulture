@@ -1,0 +1,7 @@
+name = titi
+integrity = 1
+weight = 1000000
+healing = -0.4
+hydration = 0.5
+lifespan = 10
+successor = mineral

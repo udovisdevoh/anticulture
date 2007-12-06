@@ -1,0 +1,7 @@
+name = pumbaa
+weight = 1.0
+nutrition = 0.6
+hydration = 0.1
+integrity = 3
+lifespan = 35
+successor = decomposition
