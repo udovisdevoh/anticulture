@@ -402,7 +402,7 @@ namespace AntiCulture.Worlds
                     else if (value > MaximumIntegrity)
                         need.Value = 0.0f;
                     else
-                        needp.Value = MaximumIntegrity - value;
+                        need.Value = MaximumIntegrity - value;
                 }
             }
             else
