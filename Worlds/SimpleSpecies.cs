@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using System.Globalization;
 
 namespace AntiCulture.Worlds
 {
@@ -72,21 +73,21 @@ namespace AntiCulture.Worlds
                     string property = operands[0].Trim();
                     string value = operands[1].Trim();
 
-                    if (property.Equals("successor", StringComparison.CurrentCultureIgnoreCase)) species.mSuccessor = value;
+                    if (property.Equals("successor", StringComparison.InvariantCultureIgnoreCase)) species.mSuccessor = value;
                     else
                     {
                         float floatValue;
                         try
                         {
-                            floatValue = float.Parse(value);
+                            floatValue = float.Parse(value, NumberFormatInfo.InvariantInfo);
                         }
                         catch (Exception)
                         {
                             continue;
                         }
 
-                        if (property.Equals("lifespan", StringComparison.CurrentCultureIgnoreCase)) species.mLifeSpan = floatValue;
-                        else if (property.Equals("integrity", StringComparison.CurrentCultureIgnoreCase)) species.mInitialIntegrity = floatValue;
+                        if (property.Equals("lifespan", StringComparison.InvariantCultureIgnoreCase)) species.mLifeSpan = floatValue;
+                        else if (property.Equals("integrity", StringComparison.InvariantCultureIgnoreCase)) species.mInitialIntegrity = floatValue;
                         else species.Properties[property] = floatValue;
                     }
                 }

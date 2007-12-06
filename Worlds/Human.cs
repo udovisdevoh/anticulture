@@ -450,7 +450,7 @@ namespace AntiCulture.Worlds
         {
             foreach (Need i in mNeeds)
             {
-                if (i.Name.Equals(name, StringComparison.CurrentCultureIgnoreCase))
+                if (i.Name.Equals(name, StringComparison.InvariantCultureIgnoreCase))
                     return i;
             }
             return null;
