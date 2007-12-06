@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AntiCulture.Worlds</RootNamespace>
-    <AssemblyName>AntiCulture.Worlds</AssemblyName>
+    <AssemblyName>Worlds</AssemblyName>
     <StartupObject>
     </StartupObject>
   </PropertyGroup>
@@ -17,7 +17,6 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\debug\</OutputPath>
-    <StartWorkingDirectory>bin\</StartWorkingDirectory>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -26,7 +25,6 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\release\</OutputPath>
-    <StartWorkingDirectory>bin\</StartWorkingDirectory>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
