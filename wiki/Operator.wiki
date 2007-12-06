@@ -21,6 +21,8 @@
 
 ===Communicative operators===
   * ShareKnowledge
+  * Tell
+  * Teach
   * CriticizeKnowledge
   * CommentAction
   * Write
