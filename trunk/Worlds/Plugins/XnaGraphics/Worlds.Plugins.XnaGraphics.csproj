@@ -130,6 +130,12 @@
       <Processor>SpriteTextureProcessor</Processor>
       <Name>human</Name>
     </Content>
+    <Content Include="resources\entities\lumber.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>lumber</Name>
+    </Content>
     <Content Include="resources\entities\Man.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
       <Importer>TextureImporter</Importer>
@@ -166,6 +172,18 @@
       <Processor>SpriteTextureProcessor</Processor>
       <Name>rock</Name>
     </Content>
+    <Content Include="resources\entities\rope.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>rope</Name>
+    </Content>
+    <Content Include="resources\entities\skin.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>skin</Name>
+    </Content>
     <Content Include="resources\entities\sperm.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
       <Importer>TextureImporter</Importer>
@@ -195,6 +213,30 @@
       <Importer>TextureImporter</Importer>
       <Processor>SpriteTextureProcessor</Processor>
       <Name>stone</Name>
+    </Content>
+    <Content Include="resources\entities\stoneaxe.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>stoneaxe</Name>
+    </Content>
+    <Content Include="resources\entities\stonehammer.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>stonehammer</Name>
+    </Content>
+    <Content Include="resources\entities\stonespear.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>stonespear</Name>
+    </Content>
+    <Content Include="resources\entities\tepee.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>tepee</Name>
     </Content>
     <Content Include="resources\entities\torch.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
@@ -237,6 +279,12 @@
       <Importer>TextureImporter</Importer>
       <Processor>SpriteTextureProcessor</Processor>
       <Name>womannonstick</Name>
+    </Content>
+    <Content Include="resources\entities\woodbow.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>woodbow</Name>
     </Content>
     <Content Include="resources\operators\consume.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
