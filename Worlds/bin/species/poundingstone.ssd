@@ -1,0 +1,6 @@
+name = bomcatl
+integrity = 5.5
+weight = 4.0
+healing = -0.5
+lifespan = 170
+successor = mineral
