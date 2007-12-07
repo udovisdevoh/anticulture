@@ -76,6 +76,12 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="resources\entities\anvil.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>anvil</Name>
+    </Content>
     <Content Include="resources\entities\apple.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
       <Importer>TextureImporter</Importer>
@@ -148,6 +154,24 @@
       <Processor>SpriteTextureProcessor</Processor>
       <Name>human</Name>
     </Content>
+    <Content Include="resources\entities\ironaxe.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>ironaxe</Name>
+    </Content>
+    <Content Include="resources\entities\ironhammer.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>ironhammer</Name>
+    </Content>
+    <Content Include="resources\entities\ironspear.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>ironspear</Name>
+    </Content>
     <Content Include="resources\entities\lumber.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
       <Importer>TextureImporter</Importer>
@@ -171,6 +195,42 @@
       <Importer>TextureImporter</Importer>
       <Processor>SpriteTextureProcessor</Processor>
       <Name>mineral</Name>
+    </Content>
+    <Content Include="resources\entities\palmtree.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>palmtree</Name>
+    </Content>
+    <Content Include="resources\entities\palmtree2.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>palmtree2</Name>
+    </Content>
+    <Content Include="resources\entities\palmtree3.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>palmtree3</Name>
+    </Content>
+    <Content Include="resources\entities\pinetree.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>pinetree</Name>
+    </Content>
+    <Content Include="resources\entities\pinetree2.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>pinetree2</Name>
+    </Content>
+    <Content Include="resources\entities\pinetree3.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>pinetree3</Name>
     </Content>
     <Content Include="resources\entities\plant.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
@@ -267,6 +327,18 @@
       <Importer>TextureImporter</Importer>
       <Processor>SpriteTextureProcessor</Processor>
       <Name>Tree</Name>
+    </Content>
+    <Content Include="resources\entities\tree2.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>tree2</Name>
+    </Content>
+    <Content Include="resources\entities\tree3.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>tree3</Name>
     </Content>
     <Content Include="resources\entities\urine.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
