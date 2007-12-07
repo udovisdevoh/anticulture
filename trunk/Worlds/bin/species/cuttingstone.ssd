@@ -1,0 +1,6 @@
+name = choocatl
+integrity = 5
+weight = 3.5
+healing = -0.7
+lifespan = 130
+successor = mineral

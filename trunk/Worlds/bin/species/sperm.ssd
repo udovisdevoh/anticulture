@@ -1,0 +1,8 @@
+name = jizza
+integrity = 1
+weight = 1000000
+healing = -0.3
+hydration = 0.4
+nutrition = 0.02
+lifespan = 10
+successor = mineral
