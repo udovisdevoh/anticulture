@@ -88,6 +88,12 @@
       <Processor>SpriteTextureProcessor</Processor>
       <Name>corpse</Name>
     </Content>
+    <Content Include="resources\entities\cuttingstone.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>cuttingstone</Name>
+    </Content>
     <Content Include="resources\entities\decomposition.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
       <Importer>TextureImporter</Importer>
@@ -148,11 +154,29 @@
       <Processor>SpriteTextureProcessor</Processor>
       <Name>plant</Name>
     </Content>
+    <Content Include="resources\entities\poundingstone.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>poundingstone</Name>
+    </Content>
     <Content Include="resources\entities\rock.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
       <Importer>TextureImporter</Importer>
       <Processor>SpriteTextureProcessor</Processor>
       <Name>rock</Name>
+    </Content>
+    <Content Include="resources\entities\sperm.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>sperm</Name>
+    </Content>
+    <Content Include="resources\entities\spikystone.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>spikystone</Name>
     </Content>
     <Content Include="resources\entities\steak.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
