@@ -82,6 +82,24 @@
       <Processor>SpriteTextureProcessor</Processor>
       <Name>apple</Name>
     </Content>
+    <Content Include="resources\entities\Bone.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>Bone</Name>
+    </Content>
+    <Content Include="resources\entities\boneknife.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>boneknife</Name>
+    </Content>
+    <Content Include="resources\entities\club.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>club</Name>
+    </Content>
     <Content Include="resources\entities\corpse.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
       <Importer>TextureImporter</Importer>
