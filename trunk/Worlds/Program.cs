@@ -23,15 +23,15 @@ namespace AntiCulture.Worlds
             // Register species
             encyclopedia.Species.Add(Human.Species);
 
-            encyclopedia.Species.Add(Entities.Steak.Species);
-            encyclopedia.Species.Add(Entities.Apple.Species);
-            encyclopedia.Species.Add(Entities.Water.Species);
-            encyclopedia.Species.Add(Entities.Rock.Species);
-            encyclopedia.Species.Add(Entities.Tree.Species);
-            encyclopedia.Species.Add(Entities.Vomit.Species);
-            encyclopedia.Species.Add(Entities.HealingPlant.Species);
-            encyclopedia.Species.Add(Entities.Feces.Species);
-            encyclopedia.Species.Add(Entities.Urine.Species);
+            //encyclopedia.Species.Add(Entities.Steak.Species);
+            //encyclopedia.Species.Add(Entities.Apple.Species);
+            //encyclopedia.Species.Add(Entities.Water.Species);
+            //encyclopedia.Species.Add(Entities.Rock.Species);
+            //encyclopedia.Species.Add(Entities.Tree.Species);
+            //encyclopedia.Species.Add(Entities.Vomit.Species);
+            //encyclopedia.Species.Add(Entities.HealingPlant.Species);
+            //encyclopedia.Species.Add(Entities.Feces.Species);
+            //encyclopedia.Species.Add(Entities.Urine.Species);
 
             // Register operators
             // Note: RandomOperator is NOT registered as it currently cannot
@@ -44,7 +44,8 @@ namespace AntiCulture.Worlds
             encyclopedia.Operators.Add(Operations.Push.Operator);
             encyclopedia.Operators.Add(Operations.Defecate.Operator);
             encyclopedia.Operators.Add(Operations.Urinate.Operator);
-            encyclopedia.Operators.Add(Operations.ShareKnowledge.Operator);
+            //encyclopedia.Operators.Add(Operations.ShareKnowledge.Operator);
+            encyclopedia.Operators.Add(Operations.Tell.Operator);
 
             // Set this encyclopedia to be used by our world
             mWorld.Encyclopedia = encyclopedia;
