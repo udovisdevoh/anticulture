@@ -43,6 +43,7 @@ namespace AntiCulture.Worlds.Operations
         public override void Update(Timer timer, Random random)
         {
             mWho.Stimulate("food", timer.TimeDelta);//Increase need for food
+            mWho.Stimulate("water", timer.TimeDelta);//Increase need for water
             mWho.Stimulate("health", timer.TimeDelta * 0.25f);//Increase need for better health
 
             mTimeLeft -= timer.TimeDelta;

@@ -21,6 +21,9 @@ namespace AntiCulture.Worlds.Operations
             // Find if there's something to be said
             Human.Need bestNeed = null;
             Human.Need.Solution bestSolution = null;
+            
+            
+            // Takes the BEST need and solution
             foreach (Human.Need need in who.Needs)
             {
                 foreach (Human.Need.Solution solution in need.Solutions)
@@ -37,6 +40,10 @@ namespace AntiCulture.Worlds.Operations
                     }
                 }
             }
+            
+
+            
+            
 
             if (bestSolution == null) return null;
 
@@ -80,6 +87,8 @@ namespace AntiCulture.Worlds.Operations
             mTimeLeft -= timer.TimeDelta;
             if (mTimeLeft <= 0.0f)
             {
+                mWho.Stimulate("SocialCohesion", -timer.TimeDelta * 3);
+
                 Human.Need need = mWhat.FindNeed(mBestNeed.Name);
                 bool found = false;
                 foreach (Human.Need.Solution solution in need.Solutions)

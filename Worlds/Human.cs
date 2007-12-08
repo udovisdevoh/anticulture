@@ -224,7 +224,7 @@ namespace AntiCulture.Worlds
             mInventory.Clear();
 
             // We spawn a steak
-            Species steakSpecies = World.Encyclopedia.FindSpecies("steak");
+            Species steakSpecies = World.Encyclopedia.FindSpecies("corpse");
             if(steakSpecies != null)
             {
                 Entity steak = steakSpecies.Factory(World);
