@@ -134,25 +134,51 @@ namespace AntiCulture.Worlds
 
 
             string Contents = Reader.ReadToEnd();
-            string[] Lines = Contents.Split('\n');
+
+
+
+            string[] Lines = Contents.Split('\n','\r');
 
 
             foreach (string Line in Lines)
             {
-                string[] LineContent = Line.Split(' ');
-
-                string Command = LineContent[0];
-
-      
-                if(LineContent.Length > 0)
-                {
-                    List<string> arguments = new List<string>(LineContent);
-                    arguments.RemoveAt(0);
-                    ExecuteCommand(Command, arguments.ToArray());
-                }
-
-
+                Console.WriteLine(Line);
+                ExecuteCommand(Line);
             }
+        }
+
+        private void ExecuteCommand(string Line)
+        {
+            Line.Trim();
+
+
+            if (Line.Length < 1) return;
+
+           
+
+            string[] Word = Line.Split(' ');
+            string Command = Word[0];
+
+
+            //List<string> Arguments = new List<string>(Word);
+            List<string> Arguments = new List<string>();
+            
+
+
+            foreach (string MyWord in Word)
+            {
+                MyWord.Trim();
+                if (MyWord.Length > 0)
+                {
+                    Arguments.Add(MyWord);
+                }
+            }
+
+            Arguments.RemoveAt(0);
+
+            
+
+            ExecuteCommand(Command, Arguments.ToArray());
         }
 
         private void ExecuteCommand(string command, string[] arguments)
