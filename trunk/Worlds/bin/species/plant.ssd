@@ -1,9 +1,8 @@
-name = srabis
+name = srabt
 integrity = 3
 anchored = 1
 weight = 1.0
-nutrition = 0.1
-healing = 0.2
+nutrition = 0.15
 hydration = 0.02
 lifespan = 35
 successor = decomposition

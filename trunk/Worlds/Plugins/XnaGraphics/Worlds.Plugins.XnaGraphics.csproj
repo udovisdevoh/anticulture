@@ -424,6 +424,18 @@
       <Processor>SpriteTextureProcessor</Processor>
       <Name>woodbow</Name>
     </Content>
+    <Content Include="resources\entities\youngpalmtree.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>youngpalmtree</Name>
+    </Content>
+    <Content Include="resources\entities\youngpinetree.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>youngpinetree</Name>
+    </Content>
     <Content Include="resources\operators\consume.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
       <Importer>TextureImporter</Importer>
