@@ -88,6 +88,18 @@
       <Processor>SpriteTextureProcessor</Processor>
       <Name>apple</Name>
     </Content>
+    <Content Include="resources\entities\banana.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>banana</Name>
+    </Content>
+    <Content Include="resources\entities\blueberry.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>blueberry</Name>
+    </Content>
     <Content Include="resources\entities\Bone.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
       <Importer>TextureImporter</Importer>
@@ -148,6 +160,12 @@
       <Processor>SpriteTextureProcessor</Processor>
       <Name>healingplant</Name>
     </Content>
+    <Content Include="resources\entities\herb.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>herb</Name>
+    </Content>
     <Content Include="resources\entities\human.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
       <Importer>TextureImporter</Importer>
@@ -195,6 +213,12 @@
       <Importer>TextureImporter</Importer>
       <Processor>SpriteTextureProcessor</Processor>
       <Name>mineral</Name>
+    </Content>
+    <Content Include="resources\entities\orange.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>orange</Name>
     </Content>
     <Content Include="resources\entities\palmtree.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
@@ -255,6 +279,12 @@
       <Importer>TextureImporter</Importer>
       <Processor>SpriteTextureProcessor</Processor>
       <Name>rope</Name>
+    </Content>
+    <Content Include="resources\entities\skeleton.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>skeleton</Name>
     </Content>
     <Content Include="resources\entities\skin.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
