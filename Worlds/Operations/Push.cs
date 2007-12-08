@@ -21,6 +21,8 @@ namespace AntiCulture.Worlds.Operations
             if (who.Inventory.Contains(what[0])) return null;
             // Don't do it if the target is too far
             if (Vector.Distance(who.Position, what[0].Position) > 0.5f) return null;
+            // Don't do it if the entity is anchored (i.e. a plant)
+            if (what[0].Properties["anchored"] > 0) return null;
 
             return new Push(who, what[0]);
         }

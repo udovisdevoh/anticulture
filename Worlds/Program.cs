@@ -48,6 +48,9 @@ namespace AntiCulture.Worlds
 
             // Set this encyclopedia to be used by our world
             mWorld.Encyclopedia = encyclopedia;
+
+            //Execute autoexec.cfg
+            RunBatchFile("autoexec.cfg");
         }
         #endregion
 
@@ -122,6 +125,36 @@ namespace AntiCulture.Worlds
             mPlugins.Clear();
         }
 
+        private void RunBatchFile(string FileName)
+        {
+            System.IO.FileStream Stream = new System.IO.FileStream(FileName, System.IO.FileMode.Open, System.IO.FileAccess.Read);
+            System.IO.TextReader Reader = new System.IO.StreamReader(Stream);
+
+
+
+
+            string Contents = Reader.ReadToEnd();
+            string[] Lines = Contents.Split('\n');
+
+
+            foreach (string Line in Lines)
+            {
+                string[] LineContent = Line.Split(' ');
+
+                string Command = LineContent[0];
+
+      
+                if(LineContent.Length > 0)
+                {
+                    List<string> arguments = new List<string>(LineContent);
+                    arguments.RemoveAt(0);
+                    ExecuteCommand(Command, arguments.ToArray());
+                }
+
+
+            }
+        }
+
         private void ExecuteCommand(string command, string[] arguments)
         {
             #region add command
@@ -160,6 +193,19 @@ namespace AntiCulture.Worlds
                 }
             }
             #endregion
+            #region RunBatch command
+            if (command == "runbatch")
+            {
+                if (arguments.Length == 1)
+                {
+                    RunBatchFile(arguments[0]);
+                }
+                else
+                {
+                    Console.WriteLine("The \"runbatch\" command takes one argument");
+                }
+            }
+                #endregion
             #region addnamed command
             else if (command == "addnamed")
             {
@@ -211,7 +257,35 @@ namespace AntiCulture.Worlds
                     }
                 }
             }
-               #endregion
+            #endregion
+            #region loadspeciesfolder command
+            else if (command == "loadspeciesfolder")
+            {
+                if (arguments.Length != 1)
+                {
+                    Console.WriteLine("The \"loadspeciesfolder\" command takes one argument");
+                }
+                else
+                {
+                    try
+                    {
+                        //We get the directory's listing from argument
+                        System.IO.DirectoryInfo MyDirectory = new System.IO.DirectoryInfo(arguments[0]);
+                        foreach (System.IO.FileInfo File in MyDirectory.GetFiles("*.ssd"))
+                        {
+                            Species species = SimpleSpecies.FromFile(arguments[0] + "\\" + File.Name);
+                            mWorld.Encyclopedia.Species.Add(species);
+                        }
+                        uint count = (arguments.Length == 2) ? uint.Parse(arguments[1]) : 1;
+                        Console.WriteLine("Species successfully loaded from folder");
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine("Failed to load species from folder : " + e.Message);
+                    }
+                }
+            }
+            #endregion
             #region track command
             else if (command == "track")
             {

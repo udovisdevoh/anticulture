@@ -1,5 +1,6 @@
 name = cuboire
 integrity = 100
+anchored = 1
 weight = 1000
 healing = -0.2
 nutrition = 0.1
