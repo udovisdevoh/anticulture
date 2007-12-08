@@ -271,6 +271,13 @@ namespace AntiCulture.Worlds
                 Console.WriteLine("There are " + entityCount.ToString() + " entities in the world");
             }
             #endregion
+            #region clean command
+            else if (command == "clean")
+            {
+                mWorld.Entities.Clear();
+                Console.WriteLine("World cleaned up");
+            }
+            #endregion
             #region plug command
             else if (command == "plug")
             {

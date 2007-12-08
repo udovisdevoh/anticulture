@@ -6,9 +6,9 @@ namespace AntiCulture.AI
 {
     public class Individual : ICloneable
     {
-        private Genome mGenome;
+        private float[] mGenome;
         private double mFitness = 0.0;
-        private bool mElite = false;
+        private bool mIsElite = false;
 
         public Genome Genome
         {
@@ -26,10 +26,10 @@ namespace AntiCulture.AI
             set { mFitness = value; }
         }
 
-        public bool Elite
+        public bool IsElite
         {
-            get { return mElite; }
-            set { mElite = value; }
+            get { return mIsElite; }
+            set { mIsElite = value; }
         }
 
         public Individual(Individual original)
