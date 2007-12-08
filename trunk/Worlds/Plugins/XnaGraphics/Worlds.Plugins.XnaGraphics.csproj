@@ -190,6 +190,12 @@
       <Processor>SpriteTextureProcessor</Processor>
       <Name>ironspear</Name>
     </Content>
+    <Content Include="resources\entities\ironsword.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>ironsword</Name>
+    </Content>
     <Content Include="resources\entities\lumber.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
       <Importer>TextureImporter</Importer>
