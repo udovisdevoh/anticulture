@@ -196,6 +196,12 @@
       <Processor>SpriteTextureProcessor</Processor>
       <Name>lumber</Name>
     </Content>
+    <Content Include="resources\entities\lumberhouse.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>lumberhouse</Name>
+    </Content>
     <Content Include="resources\entities\Man.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
       <Importer>TextureImporter</Importer>
@@ -213,6 +219,12 @@
       <Importer>TextureImporter</Importer>
       <Processor>SpriteTextureProcessor</Processor>
       <Name>mineral</Name>
+    </Content>
+    <Content Include="resources\entities\mudhut.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>mudhut</Name>
     </Content>
     <Content Include="resources\entities\orange.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
@@ -333,6 +345,12 @@
       <Importer>TextureImporter</Importer>
       <Processor>SpriteTextureProcessor</Processor>
       <Name>stonehammer</Name>
+    </Content>
+    <Content Include="resources\entities\stonehut.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>stonehut</Name>
     </Content>
     <Content Include="resources\entities\stonespear.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
