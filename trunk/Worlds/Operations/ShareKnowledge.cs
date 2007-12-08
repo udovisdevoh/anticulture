@@ -30,7 +30,7 @@ namespace AntiCulture.Worlds.Operations
                         bestNeed = need;
                         bestSolution = solution;
                     }
-                    else if (solution.Effectiveness > bestSolution.Effectiveness)
+                    else if (solution.Effectiveness < bestSolution.Effectiveness)
                     {
                         bestNeed = need;
                         bestSolution = solution;
