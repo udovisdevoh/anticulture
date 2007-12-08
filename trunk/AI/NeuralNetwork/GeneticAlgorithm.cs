@@ -4,46 +4,39 @@ using System.Text;
 
 namespace AntiCulture.AI
 {
-    public delegate float[] Crossover(float[] dad, float[] mom, Random random);
-    public delegate void Mutator(float[] genome, float rate, Random random);
-
     public class GeneticAlgorithm
     {
+        #region Delegates
+        public delegate float[] Crossover(float[] dad, float[] mom, Random random);
+        public delegate void Mutator(float[] genome, float rate, Random random);
+        #endregion
+
+        #region Data members
         private List<Individual> mIndividuals = new List<Individual>();
         private Dictionary<Mutator, float> mMutators = new Dictionary<Mutator, float>();
         private Crossover mCrossover = null;
         private uint mEliteCount = 0;
         private uint mEliteCopies = 1;
-        private bool mMutateElites = false;
+        private float mEliteMutationRatio = 0.0f;
         private uint mTournamentCompetitors = 2;
+        #endregion
 
+        #region Properties
         public List<Individual> Individuals
         {
             get { return mIndividuals; }
         }
 
-        public double PerturbationRate
+        public Dictionary<Mutator, float> Mutators
         {
-            get { return mPerturbationRate; }
-            set { mPerturbationRate = value; }
+            get { return mMutators; }
+            set { mMutators = value; }
         }
 
-        public double MaxPerturbationAmount
+        public Crossover Crossover
         {
-            get { return mMaxPerturbationAmount; }
-            set { mMaxPerturbationAmount = Math.Abs(value); }
-        }
-
-        public double MutationRate
-        {
-            get { return mMutationRate; }
-            set { mMutationRate = value; }
-        }
-
-        public double CrossoverRate
-        {
-            get { return mCrossoverRate; }
-            set { mCrossoverRate = value; }
+            get { return mCrossover; }
+            set { mCrossover = value; }
         }
 
         public uint EliteCount
@@ -52,22 +45,16 @@ namespace AntiCulture.AI
             set { mEliteCount = value; }
         }
 
-        public bool PerturbateElites
-        {
-            get { return mPerturbateElites; }
-            set { mPerturbateElites = value; }
-        }
-
-        public bool MutateElites
-        {
-            get { return mMutateElites; }
-            set { mMutateElites = value; }
-        }
-
         public uint EliteCopies
         {
             get { return mEliteCopies; }
             set { mEliteCopies = value; }
+        }
+
+        public float EliteMutationRatio
+        {
+            get { return mEliteMutationRatio; }
+            set { mEliteMutationRatio = value; }
         }
 
         public uint TournamentCompetitors
@@ -75,6 +62,7 @@ namespace AntiCulture.AI
             get { return mTournamentCompetitors; }
             set { mTournamentCompetitors = value == 0 ? 1 : TournamentCompetitors; }
         }
+        #endregion
 
         private static int FitnessSort(Individual individual1, Individual individual2)
         {
@@ -85,7 +73,8 @@ namespace AntiCulture.AI
         {
             if (mIndividuals.Count == 0) return;
 
-            mIndividuals.Sort(FitnessSort);
+            Comparison<Individual> sorter = delegate(Individual a, Individual b) { return a.Fitness.CompareTo(b.Fitness); };
+            mIndividuals.Sort(sorter);
 
             List<Individual> newIndividuals = new List<Individual>();
 
