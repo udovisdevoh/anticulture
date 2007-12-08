@@ -194,7 +194,7 @@ namespace AntiCulture.Worlds
             }
             #endregion
             #region RunBatch command
-            if (command == "runbatch")
+            else if (command == "runbatch")
             {
                 if (arguments.Length == 1)
                 {
@@ -205,7 +205,7 @@ namespace AntiCulture.Worlds
                     Console.WriteLine("The \"runbatch\" command takes one argument");
                 }
             }
-                #endregion
+            #endregion
             #region addnamed command
             else if (command == "addnamed")
             {
