@@ -53,6 +53,7 @@
     <Compile Include="Operations\Push.cs" />
     <Compile Include="Operations\ShareKnowledge.cs" />
     <Compile Include="Operations\Sleep.cs" />
+    <Compile Include="Operations\Teach.cs" />
     <Compile Include="Operations\Tell.cs" />
     <Compile Include="Operations\Urinate.cs" />
     <Compile Include="Operations\Vomit.cs" />

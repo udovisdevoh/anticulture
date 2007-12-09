@@ -24,14 +24,13 @@ namespace AntiCulture.Worlds.Operations
             
             
            
-
-            // Takes a random need and best solution for it      
+            // Takes a random need
             Random MyRandom = new Random();
             Human.Need[] Needs = who.Needs.ToArray();
             Human.Need need = Needs[MyRandom.Next(Needs.Length)];
             
 
-
+            //Find best solution for it
             foreach (Human.Need.Solution solution in need.Solutions)
             {
                 if (bestSolution == null)

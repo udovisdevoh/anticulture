@@ -460,6 +460,12 @@
       <Processor>SpriteTextureProcessor</Processor>
       <Name>copulate</Name>
     </Content>
+    <Content Include="resources\operators\go.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>go</Name>
+    </Content>
     <Content Include="resources\operators\hit.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>
       <Importer>TextureImporter</Importer>
@@ -489,6 +495,12 @@
       <Importer>TextureImporter</Importer>
       <Processor>SpriteTextureProcessor</Processor>
       <Name>take</Name>
+    </Content>
+    <Content Include="resources\operators\tell.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>tell</Name>
     </Content>
     <Content Include="resources\unknown.png">
       <XNAUseContentPipeline>true</XNAUseContentPipeline>

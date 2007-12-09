@@ -4,50 +4,55 @@ using System.Text;
 
 namespace AntiCulture.Worlds.Operations
 {
-    public class ShareKnowledge : Operation
+    public class Teach : Operation
     {
         #region Static operator
-        public static readonly Operator Operator = new Operator("shareknowledge", Factory, 1);
+        public static readonly Operator Operator = new Operator("teach", Factory, 1);
 
         private static Operation Factory(Human who, Entity[] what)
         {
-            if (what.Length != 1) throw new ArgumentException("ShareKnowledge takes a single argument");
+            if (what.Length != 1) throw new ArgumentException("Teach takes a single argument");
 
             // Don't do it if the target is too far
             if (Vector.Distance(who.Position, what[0].Position) > 2.0f) return null;
             // Must be human
             if (what[0].Species != Human.Species) return null;
 
+
+            //Don't do it if the teacher is not considerably older than the student
+            if (who.Age < ((Human)(what[0])).Age * 2) return null;
+
+
             // Find if there's something to be said
             Human.Need bestNeed = null;
             Human.Need.Solution bestSolution = null;
-            
-            
-            // Takes the BEST need and solution
-            foreach (Human.Need need in who.Needs)
-            {
-                foreach (Human.Need.Solution solution in need.Solutions)
-                {
-                    if (bestSolution == null)
-                    {
-                        bestNeed = need;
-                        bestSolution = solution;
-                    }
-                    else if (solution.Effectiveness < bestSolution.Effectiveness)
-                    {
-                        bestNeed = need;
-                        bestSolution = solution;
-                    }
-                }
-            }
-            
 
-            
-            
+
+
+            // Takes a random need
+            Random MyRandom = new Random();
+            Human.Need[] Needs = who.Needs.ToArray();
+            Human.Need need = Needs[MyRandom.Next(Needs.Length)];
+
+
+            //Find best solution for it
+            foreach (Human.Need.Solution solution in need.Solutions)
+            {
+                if (bestSolution == null)
+                {
+                    bestNeed = need;
+                    bestSolution = solution;
+                }
+                else if (solution.Effectiveness < bestSolution.Effectiveness)
+                {
+                    bestNeed = need;
+                    bestSolution = solution;
+                }
+            }      
 
             if (bestSolution == null) return null;
 
-            return new ShareKnowledge(who, what[0] as Human, bestNeed, bestSolution);
+            return new Teach(who, what[0] as Human, bestNeed, bestSolution);
         }
         #endregion
 
@@ -60,7 +65,7 @@ namespace AntiCulture.Worlds.Operations
         #endregion
 
         #region Constructor
-        public ShareKnowledge(Human who, Human what, Human.Need bestNeed, Human.Need.Solution bestSolution)
+        public Teach(Human who, Human what, Human.Need bestNeed, Human.Need.Solution bestSolution)
         {
             mWho = who;
             mWhat = what;
@@ -87,7 +92,7 @@ namespace AntiCulture.Worlds.Operations
             mTimeLeft -= timer.TimeDelta;
             if (mTimeLeft <= 0.0f)
             {
-                mWho.Stimulate("SocialCohesion", -timer.TimeDelta * 1);
+                mWho.Stimulate("SocialCohesion", -timer.TimeDelta * 3);
 
                 Human.Need need = mWhat.FindNeed(mBestNeed.Name);
                 bool found = false;
