@@ -20,6 +20,8 @@
   * Strike
 
 ===Communicative operators===
+  * TellFromExperience
+  * TellFromTheory
   * ShareKnowledge
   * Write
   * Read
